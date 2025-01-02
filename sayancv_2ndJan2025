@@ -1,0 +1,355 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage{xfakebold}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{changepage}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{sayancolor}{RGB}{28, 141, 251}
+\definecolor{jucolor}{RGB}{176, 1, 1}
+\definecolor{qccolor}{RGB}{50,83,220}
+
+
+
+
+
+\usepackage{eso-pic}% http://ctan.org/pkg/eso-pic
+\usepackage{lipsum}% http://ctan.org/pkg/lipsum
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small }\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\AddToShipoutPictureBG*{%
+  \AtPageUpperLeft{%
+    \hspace{\paperwidth}%
+    \raisebox{-\baselineskip}{%
+      \makebox[0pt][r]{ \color{Gray} \begin{footnotesize} Updated - {\today} \end{footnotesize} \hspace{0.5}}
+}}}%
+
+\begin{center}
+    {\Huge \scshape \color{qccolor} {Sayan Karmakar}} \\ \vspace{1pt}
+     Software Engineer -- Bengaluru, India \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 9635531400 ~ \href{mailto:sayankarmakar10@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{sayankarmakar10@gmail.com}} ~
+    \href{https://www.linkedin.com/in/sayankarmakar/}{\raisebox{-0.2\height}\faLinkedin\ \underline{in/sayankarmakar}} ~
+    % \href{}{\raisebox{-0.2\height}\faGithub\ \underline{l}}
+    \vspace{-8pt}
+\end{center}
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Qualcomm - Associate Software Engineer }{January 2023 -- Present}
+      {5G Networking Team - QData (Subpart of the IMS - IP Multimedia Subsystems Team) }{Bangalore, India}
+      \resumeItemListStart
+      \resumeItem{\textbf{Development of an HTTP Stack :} Built systems for mobile \& IoT device diagnostics over TCP, UDP, or CoAP \newline and developed an Android HTTP stack on HLOS for ML training data/log packets.}
+      \resumeItem{\textbf{Android NDK Development :} Development \& solving the Android based issues \& unit testing for various parts \newline of the framework by integrating the code into various Embedded Devices/Clients.}
+      \resumeItem{\textbf{Managed IoT Interfaces :} Worked with C++ on the LwM2M framework to manage the interface between IoT devices, exchanging data from the modem to the server and HLOS using Google Protocol Buffers.}
+      \resumeItem{\textbf{Optimized Client Systems \& Cross-Platform Development :} Detected \& resolved latency, optimized power management \& addressed memory-related challenges. Skilled in stress testing, enhancing code efficiency, \& porting \newline code across Qualcomm processors, reducing project completion time through efficient resource allocation, communication, \& benchmarking.}
+      \resumeItem{\textbf{Workflow Improvement :} Utilized Python to handle debugging \& automation scripting tasks, significantly improving development workflows.}
+      \resumeItemListEnd
+     \resumeSubheading
+      {Airbus - Associate Software Engineer }{July 2022 -- January 2023}
+      {Department of Avionics Software and System Testing}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Involved in \textbf{Software Development Life Cycle (SDLC)}, starting from requirement gathering and performed \newline \textbf{Object Oriented Analysis} and Design for development of key interfaces. V Life cycle Development Life cycle \newline has been followed.}
+        \resumeItem{Designed and implemented various classes and methods to increase the performance of the existing software for \newline the \textbf{Flight Warning System}.}
+        \resumeItem{Created G-sites and custom components for communication and collaboration within Airbus.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+ %-----------Technical SKILLS-----------
+\smallskip
+\section{Technical Skills}
+\begin{multicols}{2}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: C/C++, Python, Java} \\
+    \smallskip
+
+     \textbf{Libraries/Frameworks}{: Embedded Firmware, C++ Sockets Library, Google Protocol Buffers, Kernel Programming, Android Bootloader, Android NDK} \\
+    \smallskip
+
+    \textbf{Cross Platform}{: CMake, GDB, LLDB, Visual Studio \& other C++ build systems} \\
+     \smallskip
+    
+     \textbf{Networking Protocols}{: HTTPS, UDP, CoAP, DTLS, TCP/IP, LTE/NR} \\
+     \smallskip
+     
+     \textbf{Code Management}{: Git, Github, Gerrit, Perforce } \\
+     \smallskip
+
+     \textbf{Networking Tools }{: Wireshark, TCPDump } \\
+     \smallskip
+     
+     \textbf{Operating System}{: Windows, Unix, Linux} \\
+    }}
+ \end{itemize}
+  \end{multicols}
+ \vspace{-3.5pt}
+
+% %-----------EDUCATION-----------
+\smallskip
+\section{Education}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+    {Jadavpur University}{Kolkata, West Bengal}
+      {B.E.(Hons) in Instrumentation and Electronics Engineering}{India}
+      \resumeItemListStart
+      \resumeItem{CGPA - 8.36 / 10}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-9pt}
+
+%-----------PROJECTS-----------
+\smallskip
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+    {\textbf{Low-cost air pollution monitoring device based on air quality index} $|$ {\href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3515043}{\faIcon{link}{ Link}}}}{}%\faGlobe
+          \resumeItemListStart
+            \resumeItem{Tested I/O devices in IoT truck system.}
+            \resumeItem{Worked on particle hardware to collect and transmit sensor data to the cloud.}
+            \resumeItem{Worked with various Mathematical Methods to increase the accuracy of the system.}
+          \resumeItemListEnd
+    \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Development of an IoT based robust architecture for environmental monitoring using UAV} $|$ {\href{https://ieeexplore.ieee.org/document/9028987}{\faIcon{link}{ Link}}}}{}
+          \resumeItemListStart
+            \resumeItem{Finalised the complete architecture and developed design documents for monitoring any areas' various gases using different sensors.}
+            \resumeItem{The Hub's System is made robust and ready to function if Swarm Architecture is implemented.}
+            \resumeItem{Developed and supported web applications to display IoT Sensor data on user interface.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+ %
+%-----------Profile Links-----------
+% \section{Profile Links}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \resumeItemListStart
+%         \resumeItem
+%         {{Leetcode:}{    }{   }
+%         \href{https://youtu.be/}{\textbf{/}}}
+%         \resumeItem
+%         {{Codeforces:}         \href{https://youtu.be}{\textbf{/r}}}
+%         \resumeItem
+%         {{Codechef:     }{ }       \href{https://youtu.be/}{\textbf}}}
+%         \resumeItem
+%         {{GeeksforGeeks:}         \href{https://youtu.be}{\textbf{}}}
+%       \resumeItemListEnd
+%  \end{itemize}
+%  \vspace{-16pt}
+
+%
+%-----------Achievements-----------
+% \section{Achievements}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \resumeItemListStart
+%         \resumeItem{}
+%         \resumeItem{}
+%         \resumeItem{}
+%          \resumeItem{Secured a Global Rank of \textbf{1508} in \textbf{Google Kick Start} 2022 Round-D (\href{https://XcQ}{\underline{\textbf{certificate}}}{).}}
+%         \resumeItem{}
+%         \resumeItem{}
+%       \resumeItemListEnd
+%  \end{itemize}
+%  \vspace{-16pt}
+ 
+ 
+ %-----------Course Works-----------
+%\smallskip
+%\section{Course Works }
+%\begin{multicols}{2}
+ %\begin{itemize}[leftmargin=0.15in, label={}]
+  %  \resumeItemListStart
+   %     \resumeItem{Computer Networking}
+    %   \resumeItem{Artificial Intelligence}
+     %  \resumeItem{Digital Electronics}
+      %\resumeItem{Data structures and Algorithms}
+       %\resumeItem{Database Management System}
+        %\resumeItem{Microprocessors and Microcontrollers}
+      %\resumeItemListEnd
+ %\end{itemize}
+ %\end{multicols}
+ %\vspace{-16pt}
+ 
+%-----------Achievements-----------
+% \section{Extra carricular}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \resumeItemListStart
+%         \resumeItem{}
+%         \resumeItem{}
+%         %  \resumeItem{}
+%         \resumeItem{}
+%         \resumeItem{.}
+%         \resumeItem{}
+%       \resumeItemListEnd
+%  \end{itemize}
+%  \vspace{-16pt}
+
+
+\end{document}
+%+====================================profile links======================
+% \section{Profile Links}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \resumeItemListStart
+%         \resumeItem {\href{}{Leetcode}    {(Problem Solved: 550+)}}
+%         \resumeItem {\href{}{Codeforces}    {()}}
+%         \resumeItem {\href{}{Codechef}    {(4*, max. rating: 1943)}}
+%         \resumeItem {}{GeeksforGeeks}    {(Problem Solved: 260)}}
+%       \resumeItemListEnd
+%  \end{itemize}
+%  \vspace{-16pt}
+
+%==============================================achivemens
+% \section{Achievements [Add all kind of achievements that shows your skills]}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \resumeItemListStart
+%         \resumeItem{Highest rating of\textbf{ 1410 (specialist)} at Codeforces, which is the top site in terms of participation of programmers across globe.}
+%         \resumeItem{\textbf{550+} problem solved at Leetcode, which is the top site in terms of participation of programmers across globe.}
+%         \resumeItem{Ranked under \textbf{xyz} at Codechef which ranks among the top sites for competitive programmers. Highest rating of 2299 and rated \textbf{6*}. }
+%         \resumeItem{Qualified the prestigious ACM-ICPC regionals \textbf{thrice} and ranked Z in one of the attempts. }
+%         \resumeItem{Secured all India rank of \textbf{r, s, t} respectively in Codechef's Long Challenge in the month of February, April and May xyzh among 12k+ participants.}
+%         \resumeItem{Secured all India rank of \textbf{uh} in TCS codevita 2019.}
+%         \resumeItem{Written over \textbf{0987643} articles at Geeksforgeeks, most of them being on Data Structure and Algorithms}
+%         \resumeItem{Solved more than \textbf{900+} problems across platforms.}
+%         \resumeItem{Awarded with Geek of the year accolade from GeeksforGeeks for contribution to the community. \href{https://www.geeksforgeeks.org/geek-of-the-year/}{(Link)} }
+%       \resumeItemListEnd
+%  \end{itemize}
+
+%==================projects
+%\emph{\href{https://leetcode.com/hirakmondal2000/}{\faGithub{ Github}}} $|$ {\href{https://leetcode.com/hirakmondal2000/}{\faYoutube{ YouTube}}}}
+%-----------PROJECTS-----------
+% \section{Projects}
+%     \vspace{-5pt}
+%     \resumeSubHeadingListStart
+%     \resumeProjectHeading
+%           {\textbf{Adography} $|$ \emph{Python, OpenCV, Streamlit, Numpy, scikit-learn} $|$ {Clickable Link}}{January 2019}
+%           \resumeItemListStart
+%             \resumeItem{An interface which will help to analyse and edit photos.}
+%             \resumeItem{The search option allows the user to see all the matching results related to Ad, Ad Group and Campaign in a paginated way. On selection of any Ad, AdGroup, Campaign, the user is able to see further details.}
+%           \resumeItemListEnd
+%     \vspace{-13pt}
+%       \resumeProjectHeading
+%           {\textbf{Camping Website} $|$ \emph{NodeJS, MongoDB and Express}  $|$ {\href{https://leetcode.com/hirakmondal2000/}{Leetcode}}}{January 2019}
+%           \resumeItemListStart
+%             \resumeItem{An user interactive website which describes different campgrounds from different places and an authorised user can add a campground, edit or delete it using NodeJS, mongoDB and Express for back-end and HTML and CSS for front-end}
+%           \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+% \vspace{-15pt}
+
+
+%add ssymbol ->    \&  to add &
