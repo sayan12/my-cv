@@ -143,12 +143,12 @@
 }}}%
 
 \begin{center}
-    {\Huge \bfseries \scshape \color{qccolor} {Sayan Karmakar}} \\ \vspace{1pt}
-     % Software Engineer -- Bengaluru, India (Exploring opportunities outside India, open to relocation in EMEA zones) \\ \vspace{1pt}
-     Software Engineer \\ \vspace{1pt}
-    \small \raisebox{-0.1\height}\faPhone\ \href{https://wa.me/919635531400}{\textbf{+91-9635531400}} ~ \href{mailto:sayankarmakar10@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \textit{\underline{sayankarmakar10@gmail.com}}} ~
+    {\Huge \bfseries \color{black} Sayan Karmakar} \\ \vspace{1pt} Software Engineer \\ \vspace{1pt}
+    \small 
+    \raisebox{-0.1\height}\faPhone\ \href{https://wa.me/919635531400}{\textit{\underline{+91-9635531400}}} ~ 
+    \href{mailto:sayankarmakar10@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \textit{\underline{sayankarmakar10@gmail.com}}} ~
     \href{https://www.linkedin.com/in/sayankarmakar/}{\raisebox{-0.2\height}\faLinkedin\ \underline{in/sayankarmakar}} ~
-    % \href{}{\raisebox{-0.2\height}\faGithub\ \underline{l}}
+    \href{https://github.com/sayan12}{\raisebox{-0.2\height}\faGithub\ \underline{sayan12}}
     \vspace{-15pt}
 \end{center}
 }
@@ -158,13 +158,13 @@
 % {\fontfamily{phv}\selectfont
 \begin{itemize}[leftmargin=0.15in, label=\ding{228}, itemsep=2pt, topsep=2pt, parsep=0pt]
     \small{\item{
-        \justifying Results-driven Software Engineer with strong C++ expertise, specializing in networking protocols, \& cross-platform development.
+        \justifying Results-driven Software Engineer with strong C++ expertise, specializing in embedded systems, networking protocols, \& cross-platform development.
     }}
     \small{\item{
         \justifying Delivered high-impact solutions including HTTP stacks for mobile \& IoT diagnostics, optimized client systems \& managed complex IoT interfaces using cutting-edge technologies. Proficient with Android NDK \& network programming with deep expertise in modem software, protocol implementation \& performance optimization. Skilled in systems programming, building scalable backend systems, low latency applications, \& cross-platform solutions leveraging modern C++ practices.
     }}
     \small{\item{
-        \justifying \textcolor{darkredblack}{Available for relocation across India and EMEA Zones.}
+        \justifying \textcolor{black}{Available for relocation across India and EMEA Zones.}
     }}
 \end{itemize}
 % }
@@ -178,17 +178,17 @@
       {Modem Software \& Networking Team - QData (Part of the IMS - IP Multimedia Subsystems Team) }{}
      \begin{itemize}[itemsep=3pt]
   \resumeItem{\textbf{Development of an HTTP Stack :} Built systems for mobile \& IoT device diagnostics over TCP, UDP, or CoAP and developed an Android HTTP stack on HLOS for ML training data/log packets.}
-  \resumeItem{\textbf{Android NDK Development :} Development \& solving the Android based issues \& unit testing for various parts of the framework by integrating the code into various Devices/Clients.}
+  \resumeItem{\textbf{Android NDK Development :} Development \& solving the Android based issues \& unit testing for various parts of the framework by integrating the code into various Embedded Devices/Clients.}
   \resumeItem{\textbf{Managed IoT Interfaces :} Worked with C++ on the LwM2M framework to manage the interface between IoT devices, exchanging data from the modem to the server and HLOS using Google Protocol Buffers.}
   \resumeItem{\textbf{Optimized Client Systems \& Cross-Platform Development :} Analyze and optimize existing algorithms for highest efficiency in terms of power and latency. Detected \& resolved latency, optimized power management \& addressed memory-related challenges. Skilled in stress testing, enhancing code efficiency, \& porting code across Qualcomm processors deployed in Snapdragon-powered devices including Samsung, OnePlus, Vivo, Oppo etc. smartphones \& Snapdragon-powered Windows laptops, reducing project completion time through efficient resource allocation, communication, \& benchmarking.}
   \resumeItem{\textbf{Workflow Improvement :} Utilized Python to handle debugging \& automation scripting tasks, significantly improving development workflows.}
-  \resumeItem{\textbf{MQTT Stack Maintenance for WWAN Modems :} Maintained and optimized an MQTT stack tailored for WWAN-based modems, ensuring reliable message delivery and efficient communication between clients and cloud services.}
+  \resumeItem{\textbf{MQTT Stack Maintenance for WWAN Modems :} Maintained and optimized an MQTT stack tailored for WWAN-based modems, ensuring reliable message delivery and efficient communication between embedded clients and cloud services.}
 \end{itemize}
      \resumeSubheading
       {Airbus - Associate Software Engineer }{July 2022 -- January 2023}
       {Department of Avionics Software and System Testing}{}
       \begin{itemize}[itemsep=3pt]
-        \resumeItem{Involved in \textbf{Software Development Life Cycle (SDLC)}, starting from requirement gathering and performed \textbf{Object Oriented Analysis} and Design for development of key interfaces. V - Development Life cycle was followed.}
+        \resumeItem{Involved in \textbf{Software Development Life Cycle (SDLC)}, starting from requirement gathering and performed \textbf{Object Oriented Analysis} and Design for development of key interfaces. V Life cycle Development Life cycle was followed.}
         \resumeItem{Designed and implemented various classes and methods to increase the performance of the existing software for \newline the \textbf{Flight Warning System (FWS)}.}
         \resumeItem{Created G-sites and custom components for communication and collaboration within Airbus.}
     \end{itemize}
@@ -200,10 +200,10 @@
 %\begin{multicols}{2}
  \begin{itemize}[leftmargin=0.3in, itemsep=1pt, topsep=2pt, parsep=0pt]
     \small{\item{
-     \textbf{Programming Languages}{: C/C++, Python, Java, Rust, React}
+     \textbf{Programming Languages}{: C/C++, Python, Rust, Java, Javascript, React}
     }}
     \small{\item{
-     \textbf{Libraries/Frameworks}{: Firmware, C++ Sockets, TCP/IP Network Stack, Google Protocol Buffers, Kernel Programming, Android Bootloader, Android NDK, Android Open Source (AOSP), Android Internals, Secure Communication using OpenSSL, Basics of CUDA Programming}
+     \textbf{Libraries/Frameworks}{: Embedded Firmware, C++ Sockets, TCP/IP Network Stack, Google Protocol Buffers, Kernel Programming, Android Bootloader, Android NDK, Android Open Source (AOSP), Android Internals, Secure Communication using OpenSSL, Basics of CUDA Programming}
     }}
     \small{\item{
      \textbf{Cross Platform}{: CMake, GDB, LLDB, Visual Studio, Scons, Valgrind, Bullseye, GCov \& other C++ build systems}
@@ -212,7 +212,7 @@
      \textbf{Networking Protocols}{: HTTPS, UDP, CoAP, DTLS, TCP/IP, LTE/NR}
     }}
     \small{\item{
-     \textbf{Databases}{: MySQL, PostgreSQL }
+     \textbf{Code Management}{: Git, Github, Gerrit, Perforce }
     }}
     \small{\item{
      \textbf{Networking Tools }{: Wireshark, TCPDump }
