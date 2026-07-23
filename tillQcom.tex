@@ -1,0 +1,243 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage{amssymb}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage{xfakebold}
+\usepackage{ragged2e}
+\usepackage{pifont}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{changepage}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{sayancolor}{RGB}{28, 141, 251}
+\definecolor{jucolor}{RGB}{176, 1, 1}
+\definecolor{qccolor}{RGB}{50,83,220}
+\definecolor{darkredblack}{RGB}{225, 0, 0}
+\definecolor{darkgren}{RGB}{4, 59, 19}
+\definecolor{nvidia}{RGB}{114,179,0}
+\definecolor{forestgreen}{RGB}{27,67,50}
+\definecolor{teal}{RGB}{0,128,128}
+\definecolor{sagegreen}{RGB}{138,154,91}
+\definecolor{metacolor}{RGB}{0, 129, 251}
+
+
+\usepackage{array}
+\usepackage{eso-pic}
+\usepackage{lipsum}
+
+%----------FONT OPTIONS----------
+\usepackage{charter}
+\usepackage{helvet}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-3pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {\justifying #1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+% Added @{} to remove horizontal padding and align headings precisely with bullets
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-5pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+      \small#1 & \textbf{\small }\\
+    \end{tabular*}\vspace{-10pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\AddToShipoutPictureBG*{%
+  \AtPageUpperLeft{%
+    \hspace{\paperwidth}%
+    \raisebox{-\baselineskip}{%
+      \makebox[0pt][r]{ \color{Gray} \begin{footnotesize} Updated - {\today} \end{footnotesize} \hspace{0.5}}
+}}}%
+
+\begin{center}
+    {\Huge \bfseries \color{metacolor} Sayan Karmakar} \\ \vspace{1pt} Software Engineer \\ \vspace{1pt}
+    \small 
+    \raisebox{-0.1\height}\faPhone\ \href{https://wa.me/919635531400}{\textit{\underline{+91-9635531400}}} ~ 
+    \href{mailto:sayankarmakar10@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \textit{\underline{sayankarmakar10@gmail.com}}} ~
+    \href{https://www.linkedin.com/in/sayankarmakar/}{\raisebox{-0.2\height}\faLinkedin\ \underline{sayankarmakar}} ~
+    \href{https://github.com/sayan12}{\raisebox{-0.2\height}\faGithub\ \underline{sayan12}}
+    \vspace{-15pt}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\begin{itemize}[leftmargin=0.15in, label=\ding{228}, itemsep=2pt, topsep=2pt, parsep=0pt]
+    \small{\item{
+        \justifying Results-driven Software Engineer with strong C++ expertise, specializing in embedded systems, networking protocols, \& cross-platform development.
+    }}
+    \small{\item{
+        \justifying Delivered high-impact solutions including HTTP stacks for mobile \& IoT diagnostics, optimized client systems \& managed complex IoT interfaces using cutting-edge technologies. Proficient with Android NDK \& network programming with deep expertise in modem software, protocol implementation \& performance optimization. Skilled in systems programming, building scalable backend systems, low latency applications, \& cross-platform solutions leveraging modern C++ practices.
+    }}
+    \small{\item{
+        \justifying \textcolor{black}{Available for relocation across India and EMEA Zones. Eligible for \textcolor{qccolor}{EU Blue Card.}}
+    }}
+\end{itemize}
+\vspace{-13.5pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Qualcomm - Software Engineer}{January 2023 -- July 2026}
+      {Modem Software \& Networking Team - QData (Part of the IMS - IP Multimedia Subsystems Team)}{}
+     \begin{itemize}[itemsep=3pt]
+        \resumeItem{\textbf{Development of an HTTP Stack:} Built systems for mobile \& IoT device diagnostics \& crowdsourcing data collection over TCP, UDP, and CoAP. Developed an Android HTTP stack on HLOS (AOSP) for secure transmission of ML training data, log packets, and telemetry supporting remote diagnostics, recovery, \& predictive maintenance.}
+        \resumeItem{\textbf{Android NDK Development:} Developed Android components using the Android NDK, resolved platform-specific issues, and performed unit testing by integrating code across embedded devices and client platforms.}
+        \resumeItem{\textbf{Managed IoT Interfaces:} Worked with C++ on the LwM2M framework to manage communication between IoT devices, modems, servers \& HLOS using Google Protocol Buffers, enabling reliable data synchronization.}
+        \resumeItem{\textbf{Optimized Client Systems \& Cross-Platform Development:} Led end-to-end performance optimization to improve power efficiency, reduce latency \& optimize memory utilization through advanced debugging, profiling, stress testing \& benchmarking. Ported code across Qualcomm Snapdragon ecosystems (Samsung, OnePlus, Vivo, Oppo smartphones \& Windows laptops) while supporting telemetry \& crowd-sourced data processing. Accelerated product delivery \& system reliability through strategic resource allocation and cross-functional collaboration.}
+        \resumeItem{\textbf{Workflow Improvement:} Utilized Python to handle debugging \& automation scripting tasks, significantly improving
+        development workflows in a CI/CD environment.}
+        \resumeItem{\textbf{MQTT Stack Maintenance for WWAN Modems:} Maintained \& optimized an MQTT stack for WWAN-based modems, ensuring reliable communication between embedded clients \& cloud services supporting remote diagnostics, device recovery and predictive maintenance.}
+        \end{itemize}
+    \resumeSubheading
+      {Airbus - Associate Software Engineer }{July 2022 -- January 2023}
+      {Department of Avionics Software and System Testing}{}
+      \begin{itemize}[itemsep=3pt]
+        \resumeItem{Involved in \textbf{Software Development Life Cycle (SDLC)}, starting from requirement gathering and performed \textbf{Object Oriented Analysis} and Design for development of key interfaces. V Development Life cycle was followed.}
+        \resumeItem{Designed and implemented various classes and methods to increase the performance of the existing software for \newline the \textbf{Flight Warning System (FWS)}.}
+        \resumeItem{Created G-sites and custom components for communication and collaboration within Airbus.}
+    \end{itemize}
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------Technical SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.3in, itemsep=1pt, topsep=2pt, parsep=0pt]
+    \small{\item{
+     \textbf{Programming Languages}{: C/C++, Python, Rust, Java, Javascript, React}
+    }}
+    \small{\item{
+     \textbf{Libraries/Frameworks}{: Embedded Firmware, C++ Sockets, TCP/IP Network Stack, Google Protocol Buffers, Kernel Programming, Android Bootloader, Android NDK, Android Open Source (AOSP), Android Internals, Secure Communication using OpenSSL, Basics of CUDA Programming, QNX/Yocto, Bitbake Recipes.}
+    }}
+    \small{\item{
+     \textbf{Cross Platform}{: CMake, GDB, LLVM, LLDB, Visual Studio, Scons, Valgrind, Bullseye, GCov \& other C++ build systems.}
+    }}
+    \small{\item{
+     \textbf{Networking Protocols}{: HTTPS, UDP, CoAP, DTLS, TCP/IP, MQTT, LTE/NR}
+    }}
+    \small{\item{
+     \textbf{Code Management}{: Git, Github, Gerrit, Perforce }
+    }}
+    \small{\item{
+     \textbf{Networking Tools }{: Wireshark, TCPDump }
+    }}
+    \small{\item{
+     \textbf{Operating Systems}{: Windows x64, Unix, Linux, Windows on ARM}
+    }}
+ \end{itemize}
+ \vspace{-10pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+    {Jadavpur University}{2018-2022}
+      {B.E.(Hons) in Instrumentation and Electronics Engineering}{}
+      \resumeItemListStart
+      \resumeItem{CGPA - 8.36 / 10}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+%-----------RESEARCH PAPERS-----------
+\section{Research Papers}
+\vspace{-9pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+    {1. Low-cost air pollution monitoring device based on AQI (air quality index) $|$ {\href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3515043}{\faIcon{link}{ Link}}}}{}
+          \resumeItemListStart
+          \resumeItemListEnd
+    \vspace{-10pt}
+      \resumeProjectHeading
+          {2. Development of an IoT based robust architecture for environmental monitoring using UAV $|$ {\href{https://ieeexplore.ieee.org/document/9028987}{\faIcon{link}{ Link}}}}{}
+          \resumeItemListStart
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
